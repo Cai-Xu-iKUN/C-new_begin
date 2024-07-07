@@ -9,7 +9,7 @@
 
 int main(void)
 {
-    printf('\a');
+    printf("%c", '\a');
     return 2;
 }
  
