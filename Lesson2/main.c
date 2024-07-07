@@ -71,8 +71,8 @@ int glo_val = 114514;//全局变量（写到函数外部）
     // 后置++：先使用，后++。例子： 
     int fuck1 = 5;
     int fucku1 = fuck1++;
-    printf("fuck1 = %d\n", fuck1); // fuck1变量先赋值给fucku1，然后fucku1增加了1，输出5（不变）
-    printf("fucku1 = %d\n", fucku1); // 输出6
+    printf("fuck1 = %d\n", fuck1); // fuck1变量先赋值给fucku1，然后fuck1增加了1，输出6
+    printf("fucku1 = %d\n", fucku1); // fuck1变量先赋值给fucku1，输出5（不变）
     
 
     // --运算符与++运算符相似，换汤不换药
