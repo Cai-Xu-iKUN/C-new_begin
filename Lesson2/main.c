@@ -9,7 +9,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-int main(void) {
+int main() {
     int len = strlen("abcdefg");//strlen函数，用来检测string的长度（需include stdbool.h）
     printf("%d\n", len);
     
@@ -33,14 +33,55 @@ int main(void) {
     
 int glo_val = 114514;//全局变量（写到函数外部）
     int func_val = 1919810;//局部变量，只能于设置函数内使用
+
+
+
+    int num1 = 7 + 20;  // + 运算符
+    printf("%d\n", num1)
+
+
+    int num2 = 20 - 7;  // - 运算符
+    printf("%d\n", num2); 
+
     
+    int num3 = 20 * 7;  // * 运算符
+    printf("%d\n", num3); 
+
     
+    int num4 = 20 / 7;  // / 运算符(商取整数)(如果除法运算符到两端都是整数，商也是整数，如果商是小数的话取整数部分)
+    printf("%d\n", num4); 
+
+    // 如果想输出精确到商的话，至少要有一个数和商的小数位数一样
+    int num5 = 7.0f / 2;
+    printf("%f\n", num5); 
+ 
+
+    int num6 = 20 % 7;  // % 运算符(取余数)（两端只能是整数）
+    printf("%d\n", num6); 
+
+
+
+    // 前置++：先++，后使用。例子：
+    int fuck = 5;
+    int fucku = ++fuck;
+    printf("fuck = %d\n", fuck)// fuck变量先增加了1，然后赋值给fucku变量，输出6
+    printf("fucku = %d\n", fucku)// 输出6
+
+
+    // 后置++：先使用，后++。例子： 
+    int fuck1 = 5;
+    int fucku1 = fuck1++;
+    printf("fuck1 = %d\n", fuck)// fuck1变量先赋值给fucku1，然后fucku1增加了1，输出5（不变）
+    printf("fucku1 = %d\n", fucku1)// 输出6
     
+
+    // --运算符与++运算符相似，换汤不换药
     
-    
-    
-    
-    
+
+
+    // 强制类型转换
+    int jb = (double)3.14;// 如果要强制转换，需要在被转换数钱加上要转换成的类型 
+
     
     
     return 0;
