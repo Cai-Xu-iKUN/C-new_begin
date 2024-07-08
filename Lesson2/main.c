@@ -67,7 +67,7 @@ int glo_val = 114514;//全局变量（写到函数外部）
     printf("fuck = %d\n", fuck); // fuck变量先增加了1，然后赋值给fucku变量，输出6
     printf("fucku = %d\n", fucku); // 输出6
 
-
+ 
     // 后置++：先使用，后++。例子： 
     int fuck1 = 5;
     int fucku1 = fuck1++;
@@ -80,7 +80,7 @@ int glo_val = 114514;//全局变量（写到函数外部）
 
 
     // 强制类型转换
-    int jb = (double)3.14;// 如果要强制转换，需要在被转换数钱加上要转换成的类型 
+    int jb = (int)3.14;// 如果要强制转换，需要在被转换数前加上要转换成的类型 
 
     
     
