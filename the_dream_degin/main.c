@@ -10,6 +10,6 @@
 int main(void)
 {
     printf("%c", '\a');
-    return 2;
+    return 0;
 }
  
