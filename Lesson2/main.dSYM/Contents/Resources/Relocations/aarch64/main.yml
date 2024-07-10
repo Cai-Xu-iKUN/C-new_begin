@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/quxuan/Documents/project/Lesson2/Lesson2/main'
+binary-path:     '/Users/quxuan/Documents/C_Programing_Language_Study_Plan/C-new_begin-/Lesson2/main'
 relocations:     []
 ...
