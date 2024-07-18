@@ -16,6 +16,8 @@
 // 变量声明区
 int start_menu_val;
 int play_game_rand;
+int guess_num;
+int times_count;
 
 
 // 函数事前声明区
@@ -38,7 +40,7 @@ int main(void)
             case 1:
             
             printf("载入中……\n ");
-            play_game();1
+            play_game();
                 break;
             case 0:
             printf("正在退出\n ");
@@ -70,7 +72,41 @@ void play_game(void)
 {
     // 生成随机数
     play_game_rand = (rand() % 100) + 1;
-    printf("%d\n", play_game_rand);
+    // printf("%d\n", play_game_rand);
+    // 设置次数
+    times_count = 6;
+    
+    while (times_count)
+    {
+        // 猜数字
+        printf("你还有%d次机会，", times_count);
+        printf("请猜数字：");
+        scanf("%d", &guess_num );
+        
+
+        if (guess_num > play_game_rand)
+        {
+            printf("猜大了\n");
+        }
+        else if (guess_num < play_game_rand)
+        {
+            printf("猜小了\n");
+        }
+        else
+        {
+            printf("猜对了\n");
+            break;
+        }
+        times_count--;
+    }
+    // 跳出while有两种可能：猜对数字或者次数用完
+    if (times_count == 0) // 判断次数是否用完
+    {
+        printf("你失败了，正确的值是%d\n", play_game_rand);
+    }
+    
+    
+
 }
 
 
