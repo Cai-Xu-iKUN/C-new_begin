@@ -1,13 +1,26 @@
 {
-  "version": "0.2.0",
   "configurations": [
+    {
+      "name": "C/C++: clang++ build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "C/C++: clang++ build active file"
+    },
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/quxuan/Desktop/C/C-new_begin-",
-      "program": "/Users/quxuan/Desktop/C/C-new_begin-/build/Debug/outDebug"
+      "cwd": "/Users/quxuan/Desktop/C/C-new_begin-/game",
+      "program": "/Users/quxuan/Desktop/C/C-new_begin-/game/build/Debug/outDebug"
     }
-  ]
+  ],
+  "version": "2.0.0"
 }
